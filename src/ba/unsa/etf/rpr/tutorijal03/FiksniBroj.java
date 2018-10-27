@@ -1,7 +1,7 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
-enum Grad {TRAVNIK, ORASJE, ZENICA, SARAJEVO, LIVNO, TUZLA, MOSTAR, BIHAC, GORAZDE, SIROKI_BRIJEG, BRCKO };
 public class FiksniBroj extends TelefonskiBroj {
+    enum Grad {TRAVNIK, ORASJE, ZENICA, SARAJEVO, LIVNO, TUZLA, MOSTAR, BIHAC, GORAZDE, SIROKI_BRIJEG, BRCKO };
 
     public Grad grad;
     public String broj;
@@ -18,6 +18,7 @@ public class FiksniBroj extends TelefonskiBroj {
     @Override
     public int hashCode(){
 
+        return 0;
     }
 
 }
