@@ -11,8 +11,8 @@ public class FiksniBroj extends TelefonskiBroj {
     }
 
     public String ispisi(){
-        int niz[]{30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 49};
-        return "0" + niz[grad] + broj;
+        int niz[] = {30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 49};
+        return "0" + niz[grad.ordinal()] + broj;
     }
 
     @Override
