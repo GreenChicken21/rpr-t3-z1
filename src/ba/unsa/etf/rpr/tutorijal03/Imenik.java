@@ -2,6 +2,9 @@ package ba.unsa.etf.rpr.tutorijal03;
 
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 public class Imenik {
 
@@ -15,8 +18,19 @@ public class Imenik {
         return mapa.get(ime).ispisi();
     }
 
-    public String dajIme(TelefonskiBroj){
-        return "";
+    public String dajIme(TelefonskiBroj broj){
+
+        Set setMape = mapa.entrySet();
+
+        Iterator it = setMape.iterator();
+
+        while(it.hasNext()){
+            Map.Entry e = (Map.Entry) it.next();
+            if(e.getValue().equals(broj))
+                return (String) e.getKey();
+        }
+
+        return null;
     }
 
 
