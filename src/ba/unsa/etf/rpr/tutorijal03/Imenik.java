@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+//import ba.unsa.etf.rpr.tutorijal03.FiksniBroj.Grad.*;
 
 public class Imenik {
 
@@ -41,10 +42,18 @@ public class Imenik {
         while(it.hasNext()){
             Map.Entry e = (Map.Entry) it.next();
             if(((String)e.getKey()).charAt(0) == s)
-                pov = pov + brojac + ". " + e.getKey() + "\n";
+                pov = pov + brojac + ". " + e.getKey() + " - " + mapa.get(e.getKey()).ispisi() + "\n";
         }
         return pov;
     }
 
+    Set<String> izGrada(FiksniBroj.Grad g){
+
+        return null;
+    }
+
+    Set<TelefonskiBroj> izGradaBrojevi(FiksniBroj.Grad g){
+        return null;
+    }
 
 }
